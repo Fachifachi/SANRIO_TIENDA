@@ -76,6 +76,9 @@ function addCart($idProduct) {
         cartProduct.quantity++;
     }
 
+    // Guardamos la lista del carrito en una cookie
+    document.cookie = 'listCart=' + JSON.stringify(listCart);
+
     // Llamamos a la función para actualizar la vista del carrito en el HTML
     addCartToHTML();
 }

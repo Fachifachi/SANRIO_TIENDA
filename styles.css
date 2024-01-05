@@ -17,6 +17,31 @@ header {
     padding: 1rem;
     background-color: #ececec;
 }
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-list li {
+    margin: 0 10px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #ff80ab; /* Rosa */
+}
 
 .iconCart {
     display: flex;
@@ -120,6 +145,22 @@ header {
 .cart .buttons a{
     color: #fff;
     text-decoration: none;
+}
+.cart .buttons .checkout,
+.cart .buttons .close {
+    background-color: #ff80ab; /* Rosa */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px; /* Relleno interno */
+    border: none; /* Sin borde */
+    cursor: pointer;
+    font-size: 14px; /* Tamaño de fuente */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave de color de fondo */
+}
+
+.cart .buttons .checkout:hover,
+.cart .buttons .close:hover {
+    background-color: #ff5277; /* Cambio de color al pasar el mouse */
 }
 /*PRODUCTOS*/
 .listProduct{
@@ -250,3 +291,6 @@ h2 {
     color: #000000; /* Rosa */
     text-align: center;
 }
+
+
+/*CHECK*/
