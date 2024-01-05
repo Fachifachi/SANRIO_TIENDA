@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fde2e2; /* Fondo rosa claro */
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-container {
+    margin-right: 20px;
+}
+
+.register-container {
+    margin-left: 20px;
+}
+
+form {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #ff80ab; /* Rosa */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #ff80ab; /* Rosa */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #ff5277;
+}
+
+p {
+    margin-top: 15px;
+}
+
+a {
+    color: #ff5277;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
