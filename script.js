@@ -35,6 +35,19 @@ fetch('product.json')
     });
 
 // Función para cargar los productos en el HTML
+// ...
+
+// Realizamos una solicitud para obtener los productos desde un archivo JSON
+fetch('product.json')
+    .then(response => response.json())
+    .then(data => {
+        // Almacenamos los productos en la variable products
+        products = data;
+        // Llamamos a la función para cargar los productos en el HTML
+        addDataToHTML();
+    });
+
+// Función para cargar los productos en el HTML
 function addDataToHTML() {
     // Seleccionamos el contenedor de la lista de productos
     let listProductHTML = document.querySelector('.listProduct');
@@ -47,17 +60,23 @@ function addDataToHTML() {
         products.forEach(product => {
             let newProduct = document.createElement('div');
             newProduct.classList.add('item');
+
+            // Usamos un enlace para redirigir a la página de detalles del producto
             newProduct.innerHTML =
-                `<img src="${product.image}" alt="">
-            <h2>${product.name}</h2>
-            <div class="price">$${product.price}</div>
-            <button onclick="addCart(${product.id})">Add To Cart</button>`;
+                `<a href="product-details.html?id=${product.id}">
+                    <img src="${product.image}" alt="">
+                    <h2>${product.name}</h2>
+                    <div class="price">$${product.price}</div>
+                </a>
+                <button onclick="addCart(${product.id})">Add To Cart</button>`;
 
             // Agregamos el nuevo producto al contenedor de la lista de productos
             listProductHTML.appendChild(newProduct);
         });
     }
 }
+
+// ...
 
 // Función para agregar productos al carrito
 function addCart($idProduct) {

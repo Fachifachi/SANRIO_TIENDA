@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Sanrio</title>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -16,7 +18,7 @@
                 <ul class="nav-list">
                     <li><a href="inicio.html">Inicio</a></li>
                     <li><a href="productos.html">Productos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
                     <li class="ingreso"><a href="inicio.html">Ingreso</a></li>
                     <li class="registro"><a href="registro.html">Registro</a></li>
                 </ul>
@@ -29,10 +31,12 @@
         <h2>Productos</h2>
         <div class="listProduct">
             <div class="item">
-                <img src="./img/PRODUCTO_1.jpg" alt="Product Image">
-                <h2>My Melody JapanLA Floral Cardigan</h2>
-                <div class="price">$100.00</div>
-                <button>Add To Cart</button>
+                <a href="product-details.html?id=1">
+                    <img src="./img/PRODUCTO_1.jpg" alt="Product Image">
+                    <h2>My Melody JapanLA Floral Cardigan</h2>
+                    <div class="price">$100.00</div>
+                </a>
+                <button onclick="addCart(1)">Add To Cart</button>
             </div>
         </div>
     </div>
@@ -52,4 +56,5 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="./script.js"></script>
 </body>
+
 </html>
