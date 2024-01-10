@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500&display=swap">
+    <link rel="stylesheet" href="./css/stylesNavBar.css">
+    <link rel="icon" href="./img/candy.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-GLhlTQ8iUNq+IYQxIep9WtW/3cYw1B7SvDn6PD5tjW9epUpGGDbvoqQV5R8RhoN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-GLhlTQ8iUNq+IYQxIep9WtW/3cYw1B7SvDn6PD5tjW9epUpGGDbvoqQV5R8RhoN" crossorigin="anonymous">
+    <title>Sanrio - Inicio</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="./img/LOGO_SANRIO.png" alt="Logo">
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="./index.html" class="nav-link">Home</a>
+            <a href="./shop.html" class="nav-link">Shop</a>
+            <a href="#" class="nav-link">Sale</a>
+            <a href="./pages/contact.html" class="nav-link">Contact</a>
+            <a href="./pages/login.html" class="nav-link">Login</a>
+            <div class="cart-container" onclick="openCart()">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="totalQuantity">0</div>
+            </div>
+        </div>
+        <!-- Botón para dispositivos móviles -->
+        <div class="mobile-menu-button" onclick="toggleNavbar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <!-- Contenedor del carrito -->
+       
+    </div>
+   
+   <!-- JavaScript para mostrar/ocultar el menú móvil -->
+<script>
+    function toggleNavbar() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.style.display = (window.getComputedStyle(navLinks).display === 'none') ? 'block' : 'none';
+}
+function openCart() {
+    // Agrega aquí la lógica para abrir el carrito, por ejemplo, redirige a la página del carrito
+    window.location.href = './checkout.html';
+}
+</script>
+</body>
+</html>

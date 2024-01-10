@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const productId = parseInt(urlParams.get('id'));
 
     // Obtenemos el producto correspondiente del JSON
-    fetch('product.json')
+    fetch('./data/products.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);

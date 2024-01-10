@@ -1,60 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>Sanrio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500&display=swap">
+    <link rel="stylesheet" href="./css/stylesIndex.css">
+    <link rel="icon" href="./img/candy.png" type="image/x-icon">
+    <title>Sanrio - Inicio</title>
 </head>
-
 <body>
+    <div class="header">
+        <div class="logo">
+            <img src="./img/LOGO_SANRIO.png" alt="Logo">
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="./index.html" class="nav-link">Home</a>
+            <a href="./shop.html" class="nav-link">Shop</a>
+            <a href="#" class="nav-link">Sale</a>
+            <a href="./pages/contact.html" class="nav-link">Contact</a>
+            <a href="./pages/login.html" class="nav-link">Login</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="banner-pc">
+    
+        </div>
+    </div>
+    <div class="opinions">
+        <h2>Opiniones de nuestros clientes</h2>
+        <div class="opinion">
+            <div class="user-info">
+                <img src="./img/PERSONA_1.jpg" alt="User Photo">
+                <p class="author">- Cliente Satisfecho</p>
+            </div>
+            <p>"¡Excelente servicio! Me encantan sus productos y la rapidez en la entrega."</p>
+        </div>
+    
+        <div class="opinion">
+            <div class="user-info">
+                <img src="./img/PERSONA_2.jpg" alt="User Photo">
+                <p class="author">- Cliente Feliz</p>
+            </div>
+            <p>"Los productos son adorables y la calidad es increíble. ¡Volveré a comprar!"</p>
+        </div>
+    
+        <div class="opinion">
+            <div class="user-info">
+                <img src="./img/PERSONA_3.jpg" alt="User Photo">
+                <p class="author">- Cliente Encantado</p>
+            </div>
+            <p>"¡El mejor lugar para encontrar productos kawaii! Servicio al cliente excelente."</p>
+        </div>
+        <!-- Puedes agregar más opiniones si lo deseas -->
+    </div>
+    <div class="detalles">
+        <a>CONTINUARA</a>
+    </div>
     <div class="container">
-        <header>
-            <h1>Sanrio</h1>
-            <nav class="navbar">
-                <ul class="nav-list">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                    <li class="ingreso"><a href="inicio.html">Ingreso</a></li>
-                    <li class="registro"><a href="registro.html">Registro</a></li>
+        <div class="box">
+            <img src="./img/INS_1.png" alt="Subscribe Image">
+            <h2>SUBSCRIBE</h2>
+            <p>Choose your plan and tap subscribe!</p>
+        </div>
+
+        <div class="box">
+            <img src="./img/INS_2.png" alt="Curate Image">
+            <h2>WE CURATE</h2>
+            <p>We carefully choose the cutest kawaii things!</p>
+        </div>
+
+        <div class="box">
+            <img src="./img/INS_3.png" alt="Pack & Ship Image">
+            <h2>WE PACK & SHIP</h2>
+            <p>Your first box will be shipped in just a few days.</p>
+        </div>
+
+        <div class="box">
+            <img src="./img/INS_4.png" alt="Enjoy & Share Image">
+            <h2>YOU ENJOY & SHARE!</h2>
+            <p>Experience the cuteness overload!</p>
+        </div>
+    </div>
+    <footer class="kawaii-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kawaii Box</h3>
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Track Your Box</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">For Creators</a></li>
                 </ul>
-            </nav>
-            <div class="iconCart">
-                <img src="./img/ICON_CART.png" alt="">
-                <div class="totalQuantity">0</div>
             </div>
-        </header>
-        <h2>Productos</h2>
-        <div class="listProduct">
-            <div class="item">
-                <a href="product-details.html?id=1">
-                    <img src="./img/PRODUCTO_1.jpg" alt="Product Image">
-                    <h2>My Melody JapanLA Floral Cardigan</h2>
-                    <div class="price">$100.00</div>
-                </a>
-                <button onclick="addCart(1)">Add To Cart</button>
+           
+
+            <div class="footer-section">
+                <h3>Be the first to know!</h3>
+                <p>Email</p>
+                <input type="email" placeholder="Your email">
+                <button>Subscribe</button>
+            </div>
+            <div class="footer-section">
+        
+                <button>Get Started</button>
             </div>
         </div>
-    </div>
-
-    <div class="cart">
-        <h2>CART</h2>
-        <div class="listCart">
-            <!-- Contenido del carrito aquí -->
-        </div>
-        <div class="buttons">
-            <div class="close">CLOSE</div>
-            <div class="checkout"><a href="checkout.html">CHECKOUT</a></div>
-        </div>
-    </div>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="./script.js"></script>
+    </footer>
 </body>
-
 </html>
