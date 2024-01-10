@@ -4,39 +4,7 @@ body {
     padding: 0;
 }
 
-.header {
-    text-align: center;
-    padding: 10px;
 
-}
-
-.logo img {
-    max-width: 150px; /* Ajusta el tamaño del logo según tus necesidades */
-}
-
-.navbar {
-    text-align: center;
-    padding: 10px;
-    background-color: #ffffff; /* Puedes cambiar el color de fondo */
-}
-
-.nav-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: rgb(124, 191, 207);
-    font-family: 'Fredoka One', cursive;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #a8f0ff; /* Cambia el color al pasar el ratón sobre los enlaces */
-}
 
 .banner {
     margin-top: 20px;
@@ -130,7 +98,9 @@ body {
     background-color: #8bd0dd;
     margin: 0px 20px 20px 0px;
 }
+
 /* ... BOX ... */
+
 .container {
     display: flex;
     justify-content: space-around;
@@ -170,46 +140,45 @@ p {
 }
 /*FOOTER*/
 
-.kawaii-footer {
-    background-color: #a8f0ff; /* Color de fondo del footer */
-    padding: 20px 0;
-    text-align: center;
+.cute-footer {
+    background-color: #FF69B4;
+    color: #fff;
+    padding: 20px;
 }
 
 .footer-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .footer-section {
-    flex: 1;
+    margin-bottom: 20px;
+    flex: 1 1 200px; /* Ajusta según sea necesario */
 }
 
-.kawaii-footer h3 {
-    color: #333;
-    font-family: 'Fredoka One', cursive;
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
-.kawaii-footer ul {
-    list-style: none;
+.footer-section ul {
+    list-style-type: none;
     padding: 0;
 }
 
-.kawaii-footer ul li {
-    margin: 8px 0;
+.footer-section li {
+    margin-bottom: 5px;
 }
 
-.kawaii-footer a {
-    color: #777;
-    text-decoration: none;
+.copyright-info {
+    margin-top: 20px;
+    text-align: center;
 }
 
-.kawaii-footer input,
-.kawaii-footer button {
-    margin-top: 10px;
-    padding: 8px;
+@media screen and (max-width: 768px) {
+    .footer-section {
+        flex-basis: 100%; /* Ocupa el ancho completo en pantallas pequeñas */
+    }
 }
-
 /* ... (Resto de tus estilos) ... */

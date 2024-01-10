@@ -7,28 +7,41 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500&display=swap">
     <link rel="stylesheet" href="./css/stylesIndex.css">
     <link rel="icon" href="./img/candy.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Sanrio - Inicio</title>
 </head>
 <body>
-    <div class="header">
-        <div class="logo">
-            <img src="./img/LOGO_SANRIO.png" alt="Logo">
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="./img/LOGO_SANRIO.png" alt="Logo">
+            </div>
         </div>
-    </div>
-
-    <div class="navbar">
-        <div class="nav-links">
-            <a href="./index.html" class="nav-link">Home</a>
-            <a href="./shop.html" class="nav-link">Shop</a>
-            <a href="#" class="nav-link">Sale</a>
-            <a href="./pages/contact.html" class="nav-link">Contact</a>
-            <a href="./pages/login.html" class="nav-link">Login</a>
+        <div class="navbar">
+            <div class="nav-links">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./shop.html" class="nav-link">Shop</a>
+                <a href="#" class="nav-link">Sale</a>
+                <a href="./pages/contact.html" class="nav-link">Contact</a>
+                <a href="./pages/login.html" class="nav-link">Login</a>
+            
+            </div>
+            <!-- Botón para dispositivos móviles -->
+            <div class="mobile-menu-button" onclick="toggleNavbar()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <!-- Contenedor del carrito -->
+           
         </div>
-    </div>
-
+       
+    </header>
     <div class="banner">
         <div class="banner-pc">
-    
+            <h1>SEASONAL OFFERS!</h1>
+            <p>Many items have discounts of up to 50%. With purchases over $$$$, get free shipping. Have a cute summer!</p>
+            <button>GET IT NOW</button>
         </div>
     </div>
     <div class="opinions">
@@ -86,36 +99,69 @@
             <p>Experience the cuteness overload!</p>
         </div>
     </div>
-    <footer class="kawaii-footer">
+    <footer class="cute-footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Kawaii Box</h3>
+                <h3>WORLD OF SANRIO</h3>
                 <ul>
-                    <li><a href="#">My Account</a></li>
-                    <li><a href="#">Track Your Box</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Reviews</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Delivery</a></li>
-                    <li><a href="#">Community</a></li>
-                    <li><a href="#">Affiliate Program</a></li>
-                    <li><a href="#">For Creators</a></li>
+                    <li>Store Locator</li>
+                    <li>Character Goodies</li>
+                    <li>Supercute Adventures</li>
+                    <li>Hello Kitty Cafe</li>
+                    <li>About Sanrio</li>
                 </ul>
             </div>
-           
 
             <div class="footer-section">
-                <h3>Be the first to know!</h3>
-                <p>Email</p>
-                <input type="email" placeholder="Your email">
-                <button>Subscribe</button>
+                <h3>MORE</h3>
+                <ul>
+                    <li>e-Gift Cards</li>
+                    <li>Deals and Promos</li>
+                    <li>Merch by Amazon</li>
+                    <li>Press Releases</li>
+                </ul>
             </div>
+
             <div class="footer-section">
-        
-                <button>Get Started</button>
+                <h3>NEED HELP?</h3>
+                <ul>
+                    <li>Returns Center</li>
+                    <li>FAQs</li>
+                    <li>Contact Us</li>
+                    <li>Business Opportunities</li>
+                    <li>CPSIA</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>RESOURCES</h3>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Do Not Sell or Share My Personal Information</li>
+                    <li>Children's Privacy Policy</li>
+                    <li>Web Accessibility</li>
+                    <li>Terms of Service</li>
+                    <li>Copyright Info</li>
+                </ul>
             </div>
         </div>
+
+        <div class="copyright-info">
+            <p>© 2023 SANRIO CO., LTD. All Rights Reserved.</p>
+        </div>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        function toggleNavbar() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.style.display = (window.getComputedStyle(navLinks).display === 'none') ? 'block' : 'none';
+    }
+    function openCart() {
+        // Agrega aquí la lógica para abrir el carrito, por ejemplo, redirige a la página del carrito
+        window.location.href = './checkout.html';
+    }
+    </script>
 </body>
 </html>
