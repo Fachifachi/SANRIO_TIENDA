@@ -94,5 +94,41 @@
         "name": "Hello Kitty Holographic Plastic Cup",
         "price": 100.00,
         "image": "./img/PRODUCTO_16.webp"
+    },
+    {
+        "id": 17,
+        "name": "My Melody 9 Plush (Moonlit Melokuro Series)",
+        "price": 82.00,
+        "image": "./img/PRODUCTO_17.webp"
+    },
+    {
+        "id": 18,
+        "name": "My Melody Slim Travel Case (Moonlit Melokuro Series)",
+        "price": 24.99,
+        "image": "./img/PRODUCTO_18.webp"
+    },
+    {
+        "id": 19,
+        "name": "My Melody Mini Travel Case (Moonlit Melokuro Series)",
+        "price": 24.00,
+        "image": "./img/PRODUCTO_19.webp"
+    },
+    {
+        "id": 20,
+        "name": "My Melody Plush Headband (Moonlit Melokuro Series)",
+        "price": 26.00,
+        "image": "./img/PRODUCTO_20.webp"
+    },
+    {
+        "id": 21,
+        "name": "My Melody Plush Wristlet (Moonlit Melokuro Series)",
+        "price": 28.00,
+        "image": "./img/PRODUCTO_21.webp"
+    },
+    {
+        "id": 22,
+        "name": "My Melody Mascot Ballpoint Pen",
+        "price": 10.00,
+        "image": "./img/PRODUCTO_22.webp"
     }
 ]

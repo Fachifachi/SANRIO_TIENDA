@@ -39,9 +39,20 @@
     </header>
     <div class="banner">
         <div class="banner-pc">
-            <h1>SEASONAL OFFERS!</h1>
-            <p>Many items have discounts of up to 50%. With purchases over $$$$, get free shipping. Have a cute summer!</p>
-            <button>GET IT NOW</button>
+            <img src="./img/BANNER_PC.png" alt="BANNER_PC" class="img-banner-pc">
+            <div class="texto-en-imagen">
+                <h1>SEASONAL OFFERS!</h1>
+                <p>Many items have discounts of up to 50%. With purchases over $$$$, get free shipping. Have a cute summer!</p>
+                <button>GET IT NOW</button>
+            </div>
+        </div>
+        <div class="banner-cel">
+            <img src="./img/BANNER_CELULAR.webp" alt="BANNER_CEL">
+            <div class="text-cel">
+                <h1>SEASONAL OFFERS!</h1>
+                <p>Many items have discounts of up to 50%. With purchases over $$$$, get free shipping. Have a cute summer!</p>
+                <button>GET IT NOW</button>
+            </div>
         </div>
     </div>
     <div class="opinions">
@@ -71,8 +82,12 @@
         </div>
         <!-- Puedes agregar más opiniones si lo deseas -->
     </div>
+    <h2>Just for You</h2>
     <div class="detalles">
-        <a>CONTINUARA</a>
+
+        <div class="listProduct" id="productList">
+            <!-- Las tarjetas de productos se generarán dinámicamente con JavaScript -->
+        </div>
     </div>
     <div class="container">
         <div class="box">
@@ -150,9 +165,13 @@
             <p>© 2023 SANRIO CO., LTD. All Rights Reserved.</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.css"/>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="./js/script.js"></script>
+
+    <script src="./js/index.js"></script>
     <script>
         function toggleNavbar() {
         const navLinks = document.querySelector('.nav-links');
