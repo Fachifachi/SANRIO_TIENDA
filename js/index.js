@@ -30,3 +30,23 @@ function addCart(productId) {
     // Lógica para agregar productos al carrito
     console.log('Adding product to cart with ID:', productId);
 }
+document.addEventListener('DOMContentLoaded', function () {
+    showModal();
+});
+
+// Función para mostrar la ventana emergente
+function showModal() {
+    var modal = document.getElementById('myModal');
+    modal.style.display = 'block';
+}
+
+// Función para cerrar la ventana emergente
+function closeModal() {
+    var modal = document.getElementById('myModal');
+    modal.style.display = 'none';
+}
+
+// Función para redirigir al usuario al HTML de registro
+function redirectToRegistration() {
+    window.location.href = './pages/login.html';  // Reemplaza 'registro.html' con la ruta correcta
+}
